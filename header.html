@@ -16,20 +16,20 @@
             var parentDirectory = links[0];
 
             // set the page title
-            document.title = 'Index of ' + currentIndex;
+            document.title = 'Index of ' + currentIndex + ' | SCNU SoCoding Open Source Mirror';
 
             // change the parent directory icon
             if (parentDirectory.text == 'Parent directory/') {
                 parentDirectory.classList.add("parent");
             }
 
+            // disable sorting
             var headLinks = document.getElementsByTagName("thead")[0].getElementsByTagName("a")[0];
             headLinks.parentElement.innerHTML = "File Name";
             var headLinks = document.getElementsByTagName("thead")[0].getElementsByTagName("a")[0];
             headLinks.parentElement.innerHTML = "File Size";
             var headLinks = document.getElementsByTagName("thead")[0].getElementsByTagName("a")[0];
             headLinks.parentElement.innerHTML = "Date";
-
         }
     </script>
 </head>
@@ -38,18 +38,20 @@
     <nav id="w1" class="navbar navbar-expand-md navbar-light fixed-top" style="padding: 0.5rem 1rem;background: #e9ecef;
     border-bottom: 2px solid #0056b3">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">SCNU SoCoding Open Source Mirror</a>
+            <a class="navbar-brand d-none d-md-inline" href="/">SCNU SoCoding Open Source Mirror</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#w1-collapse"
                 aria-controls="w1-collapse" aria-expanded="false" aria-label="Toggle navigation"><span
                     class="navbar-toggler-icon"></span></button>
             <div id="w1-collapse" class="collapse navbar-collapse">
                 <ul id="w2" class="navbar-nav ml-auto nav">
-                    <li class="nav-item"><a class="nav-link" target="_blank" href="//socoding.cn">Forum</a></li>
-                    <li class="nav-item"><a class="nav-link" target="_blank" href="//10.191.65.243:5050/">SCNUOJ</a></li>
-                    <li class="nav-item"><a class="nav-link" target="_blank" href="//github.com/scnu-socoding/">GitHub</a></li>
+                    <li class="nav-item d-md-none"><a class="nav-link" href="/">Home Page</a></li>
+                    <li class="nav-item"><a class="nav-link" target="_blank"
+                            href="//socoding.cn/c/departments/mirror/27">Help Center</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div id="home"></div>
     <div class="col-md-10 offset-md-1">
-    <h1>
+
+        <h1>
